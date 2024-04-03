@@ -771,7 +771,7 @@ static int ventoy_api_save_control(struct mg_connection *conn, VTOY_JSON *json)
 void ventoy_data_default_theme(data_theme *data)
 {
     memset(data, 0, sizeof(data_theme));
-    strlcpy(data->gfxmode, "1024x768");
+    strlcpy(data->gfxmode, "1920x1080");
     scnprintf(data->ventoy_left, sizeof(data->ventoy_left), "5%%");
     scnprintf(data->ventoy_top, sizeof(data->ventoy_top), "95%%");
     scnprintf(data->ventoy_color, sizeof(data->ventoy_color), "%s", "#0000ff");
